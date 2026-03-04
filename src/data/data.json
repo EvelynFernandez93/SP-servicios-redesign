@@ -1,0 +1,50 @@
+
+[
+  {
+    "id": 1,
+    "img": "Proyecto1.png",
+    "portada": "/Proyecto1.png",
+    "nombre": "Instalación de gas",
+    "introduccion": "Servicio destinado a obras nuevas, rehabilitaciones, reparaciones o ampliaciones. Puede estar abastecido por gas natural o GLP (gas envasado).",
+    "descripcion": "Servicio realizado por personal idóneo",
+    "informacion": "Un profesional realiza una visita para elaborar un presupuesto acorde a los requerimientos del propietario y ejecutar la obra conforme a las normas vigentes establecidas por las Normas Argentinas de Gas",
+    "video": "xHv2uzPjOgA",
+    "thumbnail": "/thumbnails/gas1.jpg"
+  },
+  {
+    "id": 2,
+    "img": "Proyecto2.png",
+    "portada": "/Proyecto2.png",
+    "nombre": "Servicio administrativo y gas",
+    "introduccion": "Servicio orientado tanto a profesionales de la construcción como a particulares",
+    "descripcion": "Gestión administrativa vinculada a instalaciones de gas",
+    "informacion": "Este servicio se adapta a las necesidades del cliente y a la documentación existente. Se elabora un presupuesto que contempla la mano de obra y los trámites administrativos. Las tareas incluyen: generación del expediente en la distribuidora para obtener la factibilidad del servicio, elaboración de planos (con proyecto y cálculo) ,listado de materiales y pedidos de inspección parcial",
+    "video": "xHv2uzPjOgA",
+    "thumbnail": "/thumbnails/gas2.jpg"
+  },
+{
+  "id": 3,
+  "img": "Proyecto3.png",
+  "portada": "/Proyecto3.png",
+  "nombre": "Instalaciones de agua",
+  "introduccion": "Servicio destinado a obras nuevas, reparaciones, ampliaciones o modificaciones, para la distribución de agua fría y caliente mediante sistemas por roscado o fusión",
+  "descripcion": "Trabajo realizado por instaladores matriculados",
+  "informacion": "Servicio orientado tanto a profesionales de la construcción como a particulares. El instalador realiza una visita a la obra para evaluar el recorrido de la cañería y confeccionar un presupuesto de mano de obra. Una vez aprobado, se elabora el listado de materiales necesarios para la ejecución del trabajo",
+  "video": "xHv2uzPjOgA",
+  "thumbnail": "/thumbnails/agua1.jpg"
+},
+{
+  "id": 4,
+  "img": "Proyecto4.png",
+  "portada": "/Proyecto4.png",
+  "nombre": "Instalacion de cloacas",
+  "introduccion": "Servicio destinado a obras nuevas, reparaciones, ampliaciones o modificaciones,para instalación de desagües cloacales",
+  "descripcion": "Trabajo realizado por instaladores",
+  "informacion": "Servicio orientado tanto a profesionales de la construcción como a particulares. El instalador realiza una visita a la obra para evaluar el recorrido de la cañería  a instalar y confeccionar un presupuesto de mano de obra. Una vez aprobado, se elabora el listado de materiales necesarios para la ejecución del trabajo",
+  "video": "xHv2uzPjOgA",
+  "thumbnail": "/thumbnails/agua1.jpg"
+}
+
+]
+
+	

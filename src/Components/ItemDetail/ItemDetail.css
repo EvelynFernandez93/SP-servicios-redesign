@@ -1,0 +1,220 @@
+
+.itemdetail-notfound{
+  padding: 24px;
+  color: #FCF5BC;
+  background: var(--Foundation-Secundario-secundario-800, #4E5A5E);
+  min-height: 100vh;
+}
+
+.itemdetail-overlay{
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.itemdetail-modal{
+  width: min(1100px, 96vw);
+  max-height: 92vh;
+  background: var(--Foundation-Secundario-secundario-800, #4E5A5E);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,.45);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.itemdetail-close{
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgba(252,245,188,.3);
+  background: rgba(0,0,0,.4);
+  color: #FCF5BC;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+  transition: .2s;
+}
+.itemdetail-close:hover{
+  background: rgba(0,0,0,.6);
+}
+
+.itemdetail-header{
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.itemdetail-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.itemdetail-gradient{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 35%,
+    rgba(0,0,0,.8) 100%
+  );
+  pointer-events: none;
+}
+
+.itemdetail-body{
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow: auto;
+  text-align: center;
+}
+
+.itemdetail-nombre{
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  color: #FCF5BC;
+}
+
+.itemdetail-intro{
+  margin: 0;
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 300;
+  color: #E5E1C8;
+  line-height: 1.4;
+}
+
+.itemdetail-descripcion{
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+  color: #FCF5BC;
+  line-height: 1.25;
+}
+
+.itemdetail-info{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  color: #E5E1C8;
+  line-height: 1.45;
+}
+
+.itemdetail-actions{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.presupuesto-btn{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  height: 50px;
+  padding: 0 22px;
+  border-radius: 12px;
+
+  background: var(--Foundation-Terciario-terciario-500, #37A9C8);
+  color: var(--Foundation-Primario-primario-600, #E5DFAB);
+
+  font-family: Kanit;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.15);
+
+  border: 1px solid rgba(255,255,255,0.10);
+
+  transform: translateY(0);
+
+  transition:
+    transform 480ms cubic-bezier(.16,.84,.44,1),
+    box-shadow 480ms cubic-bezier(.16,.84,.44,1),
+    filter 480ms ease,
+    background 480ms ease,
+    color 480ms ease;
+
+  will-change: transform;
+}
+
+.presupuesto-btn::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: radial-gradient(circle at 30% 20%, rgba(255,255,255,0.25), transparent 60%);
+  opacity: 0;
+  transition: opacity 480ms ease;
+  pointer-events: none;
+}
+
+.presupuesto-btn:hover{
+  transform: translateY(-4px);
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.25);
+  filter: saturate(1.08);
+}
+
+.presupuesto-btn:hover::before{
+  opacity: 1;
+}
+
+.itemdetail-page{
+  min-height: 100vh;
+  background: var(--Foundation-Secundario-secundario-800, #4E5A5E);
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.itemdetail-page-inner{
+  width: min(1100px, 96vw);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+}
+
+.itemdetail-page-img{
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(0,0,0,.35);
+}
+
+@media (max-width: 768px){
+  .itemdetail-header{ height: 240px; }
+  .itemdetail-nombre{ font-size: 30px; }
+  .itemdetail-intro{ font-size: 18px; }
+  .itemdetail-descripcion{ font-size: 22px; }
+  .itemdetail-info{ font-size: 18px; }
+}
+
+@media (max-width: 480px){
+  .itemdetail-header{ height: 200px; }
+  .itemdetail-body{ padding: 18px; }
+  .itemdetail-nombre{ font-size: 26px; }
+  .itemdetail-descripcion{ font-size: 20px; }
+}
